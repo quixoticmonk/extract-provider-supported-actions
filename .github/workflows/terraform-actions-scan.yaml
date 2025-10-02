@@ -24,7 +24,9 @@ jobs:
       run: chmod +x get_provider_actions.sh
     
     - name: Scan Provider Actions
-      run: ./get_provider_actions.sh > actions-report.json
+      run: |
+        ./get_provider_actions.sh | tee actions-report.json
+        echo "File size: $(wc -c < actions-report.json)"
     
     - name: Commit Results
       run: |
