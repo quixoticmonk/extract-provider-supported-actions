@@ -5,6 +5,12 @@ on:
     - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+env:
+  TERRAFORM_PROVIDERS: "aws azurerm google tfe awscc"
+
 jobs:
   scan-actions:
     runs-on: ubuntu-latest
@@ -19,7 +25,7 @@ jobs:
     
     - name: Scan Provider Actions
       run: |
-        providers=("aws" "azurerm" "google" "tfe" "awscc")
+        providers=($TERRAFORM_PROVIDERS)
         
         echo "{" > actions-report.json
         first=true
