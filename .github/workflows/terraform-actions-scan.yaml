@@ -32,11 +32,11 @@ jobs:
           map({key: (.key | split("/")[-1]), value: (.value.action_schemas // {} | keys | sort)}) | 
           from_entries
         ' > actions-report.json
-
+        cat actions-report.json
     - name: Commit Results
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add actions-report.json
-        git diff --staged --quiet || git commit -m "Update Terraform provider actions report"
+        git commit -m "Update Terraform provider actions report"
         git push
