@@ -1,0 +1,47 @@
+name: Terraform Provider Actions Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  scan-actions:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: latest
+    
+    - name: Scan Provider Actions
+      run: |
+        providers=("aws" "azurerm" "google" "tfe" "awscc")
+        
+        echo "{" > actions-report.json
+        first=true
+        
+        for provider in "${providers[@]}"; do
+          if [ "$first" = false ]; then
+            echo "," >> actions-report.json
+          fi
+          
+          echo "  \"$provider\": [" >> actions-report.json
+          ./get_provider_actions.sh "$provider" | sed 's/.*/"&"/' | paste -sd, >> actions-report.json
+          echo "  ]" >> actions-report.json
+          
+          first=false
+        done
+        
+        echo "}" >> actions-report.json
+    
+    - name: Commit Results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add actions-report.json
+        git diff --staged --quiet || git commit -m "Update Terraform provider actions report"
+        git push
