@@ -8,9 +8,6 @@ on:
 permissions:
   contents: write
 
-env:
-  TERRAFORM_PROVIDERS: "aws azurerm google tfe"
-
 jobs:
   scan-actions:
     runs-on: ubuntu-latest
@@ -27,31 +24,7 @@ jobs:
       run: chmod +x get_provider_actions.sh
     
     - name: Scan Provider Actions
-      run: |
-        # Get all available providers dynamically
-        terraform init -upgrade > /dev/null 2>&1
-        providers=$(terraform providers schema -json | jq -r '.provider_schemas | keys[]' | sed 's|.*/||' | tr '\n' ' ')
-        
-        echo "{" > actions-report.json
-        first=true
-        
-        for provider in $providers; do
-          if [ "$first" = false ]; then
-            echo "," >> actions-report.json
-          fi
-          
-          echo -n "  \"$provider\": [" >> actions-report.json
-          
-          actions=$(./get_provider_actions.sh "$provider")
-          if [ -n "$actions" ]; then
-            echo "$actions" | sed 's/.*/"&"/' | paste -sd, | tr -d '\n' >> actions-report.json
-          fi
-          
-          echo "]" >> actions-report.json
-          first=false
-        done
-        
-        echo "}" >> actions-report.json
+      run: ./get_provider_actions.sh > actions-report.json
     
     - name: Commit Results
       run: |
