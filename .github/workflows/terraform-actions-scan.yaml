@@ -28,10 +28,21 @@ jobs:
       run: |
         ./get_provider_actions.sh > actions-report.json
         cat actions-report.json
+    - name: Update README with actions
+      run: |
+        # Remove existing actions section if it exists
+        sed -i '/## Supported Actions/,$d' README.md
+        # Add new actions section
+        echo "" >> README.md
+        echo "## Supported Actions" >> README.md
+        echo "" >> README.md
+        echo '```json' >> README.md
+        cat actions-report.json >> README.md
+        echo '```' >> README.md
     - name: Commit Results
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add actions-report.json
+        git add actions-report.json README.md
         git commit -m "Update Terraform provider actions report"
         git push
