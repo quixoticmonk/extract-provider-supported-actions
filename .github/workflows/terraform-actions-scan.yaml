@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  TERRAFORM_PROVIDERS: "aws azurerm google tfe awscc"
+  TERRAFORM_PROVIDERS: "aws"
 
 jobs:
   scan-actions:
@@ -34,18 +34,30 @@ jobs:
         first=true
         
         for provider in "${providers[@]}"; do
+          echo "Processing provider: $provider"
+          
           if [ "$first" = false ]; then
             echo "," >> actions-report.json
           fi
           
-          echo "  \"$provider\": [" >> actions-report.json
-          ./get_provider_actions.sh "$provider" | sed 's/.*/"&"/' | paste -sd, >> actions-report.json
-          echo "  ]" >> actions-report.json
+          echo -n "  \"$provider\": [" >> actions-report.json
           
+          echo "Running script for $provider..."
+          actions=$(./get_provider_actions.sh "$provider" 2>&1)
+          echo "Script output: '$actions'"
+          
+          if [ -n "$actions" ]; then
+            echo "$actions" | sed 's/.*/"&"/' | paste -sd, | tr -d '\n' >> actions-report.json
+          fi
+          
+          echo "]" >> actions-report.json
           first=false
         done
         
         echo "}" >> actions-report.json
+        
+        echo "Final JSON:"
+        cat actions-report.json
     
     - name: Commit Results
       run: |
