@@ -1,4 +1,10 @@
 {
+  "aap": [
+    "aap_eda_eventstream_post"
+  ],
+  "bufo": [
+    "bufo_print"
+  ],
   "aws": [
     "aws_cloudfront_create_invalidation",
     "aws_codebuild_start_build",
@@ -13,6 +19,7 @@
   "azurerm": [
     "azurerm_virtual_machine_power"
   ],
+  "external": [],
   "google": [],
   "tfe": []
 }
