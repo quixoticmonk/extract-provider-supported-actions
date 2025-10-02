@@ -45,14 +45,14 @@ jobs:
           # Debug: Run the script steps manually
           echo "Creating main.tf for $provider..."
           cat > main.tf << EOF
-terraform {
-  required_providers {
-    ${provider} = {
-      source = "hashicorp/${provider}"
-    }
-  }
-}
-EOF
+          terraform {
+            required_providers {
+              ${provider} = {
+                source = "hashicorp/${provider}"
+              }
+            }
+          }
+          EOF
           
           echo "Running terraform init..."
           terraform init -upgrade
