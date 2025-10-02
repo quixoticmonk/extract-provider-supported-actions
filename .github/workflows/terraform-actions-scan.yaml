@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  TERRAFORM_PROVIDERS: "aws"
+  TERRAFORM_PROVIDERS: "aws azurerm google tfe"
 
 jobs:
   scan-actions:
@@ -28,57 +28,30 @@ jobs:
     
     - name: Scan Provider Actions
       run: |
-        providers=($TERRAFORM_PROVIDERS)
+        # Get all available providers dynamically
+        terraform init -upgrade > /dev/null 2>&1
+        providers=$(terraform providers schema -json | jq -r '.provider_schemas | keys[]' | sed 's|.*/||' | tr '\n' ' ')
         
         echo "{" > actions-report.json
         first=true
         
-        for provider in "${providers[@]}"; do
-          echo "Processing provider: $provider"
-          
+        for provider in $providers; do
           if [ "$first" = false ]; then
             echo "," >> actions-report.json
           fi
           
           echo -n "  \"$provider\": [" >> actions-report.json
           
-          # Debug: Run the script steps manually
-          echo "Creating main.tf for $provider..."
-          cat > main.tf << EOF
-          terraform {
-            required_providers {
-              ${provider} = {
-                source = "hashicorp/${provider}"
-              }
-            }
-          }
-          EOF
-          
-          echo "Running terraform init..."
-          terraform init -upgrade
-          
-          echo "Running terraform providers schema..."
-          terraform providers schema -json | jq -r ".provider_schemas.\"registry.terraform.io/hashicorp/${provider}\" | .action_schemas // {} | keys[]" | sort > actions.txt
-          
-          echo "Actions found:"
-          cat actions.txt
-          
-          if [ -s actions.txt ]; then
-            cat actions.txt | sed 's/.*/"&"/' | paste -sd, | tr -d '\n' >> actions-report.json
+          actions=$(./get_provider_actions.sh "$provider")
+          if [ -n "$actions" ]; then
+            echo "$actions" | sed 's/.*/"&"/' | paste -sd, | tr -d '\n' >> actions-report.json
           fi
           
           echo "]" >> actions-report.json
           first=false
-          
-          # Cleanup
-          rm -f main.tf .terraform.lock.hcl actions.txt
-          rm -rf .terraform
         done
         
         echo "}" >> actions-report.json
-        
-        echo "Final JSON:"
-        cat actions-report.json
     
     - name: Commit Results
       run: |
