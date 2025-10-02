@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -f ".terraform.lock.hcl" ]; then
-  terraform init -upgrade > /dev/null 2>&1
+  terraform init -upgrade
 fi
 
 # Handle specific provider
