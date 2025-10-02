@@ -42,16 +42,37 @@ jobs:
           
           echo -n "  \"$provider\": [" >> actions-report.json
           
-          echo "Running script for $provider..."
-          actions=$(./get_provider_actions.sh "$provider" 2>&1)
-          echo "Script output: '$actions'"
+          # Debug: Run the script steps manually
+          echo "Creating main.tf for $provider..."
+          cat > main.tf << EOF
+terraform {
+  required_providers {
+    ${provider} = {
+      source = "hashicorp/${provider}"
+    }
+  }
+}
+EOF
           
-          if [ -n "$actions" ]; then
-            echo "$actions" | sed 's/.*/"&"/' | paste -sd, | tr -d '\n' >> actions-report.json
+          echo "Running terraform init..."
+          terraform init -upgrade
+          
+          echo "Running terraform providers schema..."
+          terraform providers schema -json | jq -r ".provider_schemas.\"registry.terraform.io/hashicorp/${provider}\" | .action_schemas // {} | keys[]" | sort > actions.txt
+          
+          echo "Actions found:"
+          cat actions.txt
+          
+          if [ -s actions.txt ]; then
+            cat actions.txt | sed 's/.*/"&"/' | paste -sd, | tr -d '\n' >> actions-report.json
           fi
           
           echo "]" >> actions-report.json
           first=false
+          
+          # Cleanup
+          rm -f main.tf .terraform.lock.hcl actions.txt
+          rm -rf .terraform
         done
         
         echo "}" >> actions-report.json
