@@ -15,5 +15,15 @@ terraform {
     awscc = {
       source = "hashicorp/awscc"
     }
+        bufo = {
+      source = "austinvalle/bufo"
+    }
+    aap = {
+      source = "ansible/aap"
+      version = "1.4.0-devpreview1"
+    }
+    external = {
+      source = "registry.terraform.io/hashicorp/external"
+    }
   }
 }
