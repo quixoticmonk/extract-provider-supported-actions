@@ -23,6 +23,9 @@ jobs:
       with:
         terraform_version: latest
     
+    - name: Make script executable
+      run: chmod +x get_provider_actions.sh
+    
     - name: Scan Provider Actions
       run: |
         providers=($TERRAFORM_PROVIDERS)
