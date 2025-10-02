@@ -26,12 +26,12 @@ jobs:
     - name: Scan Provider Actions
       run: |
         terraform init && \
-        terraform providers schema -json | jq -r '
+        terraform providers schema -json | jq '
           .provider_schemas | 
           to_entries | 
           map({key: (.key | split("/")[-1]), value: (.value.action_schemas // {} | keys | sort)}) | 
           from_entries
-        '
+        ' > actions-report.json
 
     - name: Commit Results
       run: |
