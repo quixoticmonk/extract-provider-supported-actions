@@ -1,2 +1,11 @@
 {
+  "aws": []
+,
+  "awscc": []
+,
+  "azurerm": []
+,
+  "google": []
+,
+  "tfe": []
 }
