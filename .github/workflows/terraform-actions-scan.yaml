@@ -25,9 +25,14 @@ jobs:
     
     - name: Scan Provider Actions
       run: |
-        ./get_provider_actions.sh | tee actions-report.json
-        echo "File size: $(wc -c < actions-report.json)"
-    
+        terraform init
+        terraform providers schema -json | jq -r '
+          .provider_schemas | 
+          to_entries | 
+          map({key: (.key | split("/")[-1]), value: (.value.action_schemas // {} | keys | sort)}) | 
+          from_entries
+        ' > actions-report.json
+
     - name: Commit Results
       run: |
         git config --local user.email "action@github.com"
