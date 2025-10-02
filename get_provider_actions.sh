@@ -8,8 +8,12 @@ fi
 if [ -n "$1" ] && [ "$1" != "all" ] && [ "$1" != "json" ]; then
   provider_key=$(terraform providers schema -json | jq -r '.provider_schemas | keys[]' | grep "/${1}$")
   if [ -n "$provider_key" ]; then
-    actions=$(terraform providers schema -json | jq -r ".provider_schemas.\"${provider_key}\" | .action_schemas // {} | keys[]" | sort)
-    echo "{\"$1\": [$(echo "$actions" | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//')]}}"
+    actions=$(terraform providers schema -json | jq -r ".provider_schemas.\"${provider_key}\" | .action_schemas // {} | keys[]" 2>/dev/null | sort)
+    if [ -n "$actions" ]; then
+      echo "{\"$1\": [$(echo "$actions" | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//')]}}"
+    else
+      echo "{\"$1\": []}"
+    fi
   else
     echo "{\"$1\": []}"
   fi
@@ -27,7 +31,7 @@ for provider in $providers; do
   
   provider_key=$(terraform providers schema -json | jq -r '.provider_schemas | keys[]' | grep "/${provider}$")
   if [ -n "$provider_key" ]; then
-    actions=$(terraform providers schema -json | jq -r ".provider_schemas.\"${provider_key}\" | .action_schemas // {} | keys[]" | sort)
+    actions=$(terraform providers schema -json | jq -r ".provider_schemas.\"${provider_key}\" | .action_schemas // {} | keys[]" 2>/dev/null | sort)
     [ -n "$actions" ] && echo "$actions" | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//'
   fi
   
