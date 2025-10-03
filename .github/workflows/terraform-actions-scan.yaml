@@ -1,15 +1,15 @@
-name: Terraform Provider Actions Scan
+name: Terraform Provider Capabilities Scan
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Weekly on Sunday at midnight UTC
+    - cron: '0 0 * * *' 
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  scan-actions:
+  scan-capabilities:
     runs-on: ubuntu-latest
     
     steps:
@@ -18,31 +18,58 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: 1.14.0-beta2
+        terraform_version: latest
         terraform_wrapper: false
     
-    - name: Make script executable
-      run: chmod +x get_provider_actions.sh
+    - name: Make scripts executable
+      run: |
+        chmod +x get_provider_actions.sh
+        chmod +x get_provider_list_resources.sh
     
-    - name: Scan Provider Actions
+    - name: Generate Reports
       run: |
         ./get_provider_actions.sh > actions-report.json
-        cat actions-report.json
-    - name: Update README with actions
+        ./get_provider_list_resources.sh > list-resources-report.json
+    
+    - name: Update README with Reports
       run: |
-        # Remove existing actions section if it exists
-        sed -i '/## Supported Actions/,$d' README.md
-        # Add new actions section
-        echo "" >> README.md
-        echo "## Supported Actions" >> README.md
-        echo "" >> README.md
-        echo '```json' >> README.md
-        cat actions-report.json >> README.md
-        echo '```' >> README.md
+        # Create temp README without reports section
+        sed '/## Reports/,$d' README.md > README_temp.md
+        
+        # Add reports section with actual data
+        cat >> README_temp.md << 'EOF'
+        ## Reports
+
+        <details>
+        <summary>⚡ Actions Report</summary>
+
+        ```json
+        EOF
+        cat actions-report.json >> README_temp.md
+        cat >> README_temp.md << 'EOF'
+        ```
+
+        </details>
+
+        <details>
+        <summary>📝 List Resources Report</summary>
+
+        ```json
+        EOF
+        cat list-resources-report.json >> README_temp.md
+        cat >> README_temp.md << 'EOF'
+        ```
+
+        </details>
+        EOF
+        
+        # Replace original README
+        mv README_temp.md README.md
+    
     - name: Commit Results
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add actions-report.json README.md
-        git commit -m "Update Terraform provider actions report"
+        git add actions-report.json list-resources-report.json README.md
+        git commit -m "Update Terraform provider capabilities reports" || exit 0
         git push
