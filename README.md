@@ -1,4 +1,5 @@
 # extract-provider-supported-actions
+
 ## Supported Actions
 
 ```json
