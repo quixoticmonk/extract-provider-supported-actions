@@ -29,3 +29,40 @@
   "tfe": []
 }
 ```
+## Reports
+
+<details>
+<summary>⚡ Actions Report</summary>
+
+```json
+{
+  "aap": [],
+  "bufo": [],
+  "aws": [],
+  "awscc": [],
+  "azurerm": [],
+  "external": [],
+  "google": [],
+  "tfe": []
+}
+```
+
+</details>
+
+<details>
+<summary>📝 List Resources Report</summary>
+
+```json
+{
+  "aap": [],
+  "bufo": [],
+  "aws": [],
+  "awscc": [],
+  "azurerm": [],
+  "external": [],
+  "google": [],
+  "tfe": []
+}
+```
+
+</details>
