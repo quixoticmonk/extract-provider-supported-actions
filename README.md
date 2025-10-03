@@ -6,7 +6,7 @@ The repo aims to capture the list of Terraform actions and supported list blocks
 ## Reports
 
 <details>
-<summary>⚡ Actions Report</summary>
+<summary>⚡ Supported Actions</summary>
 
 ```json
 {
@@ -39,7 +39,7 @@ The repo aims to capture the list of Terraform actions and supported list blocks
 </details>
 
 <details>
-<summary>📝 List Resources Report</summary>
+<summary>📝 Supported List Resources</summary>
 
 ```json
 {
