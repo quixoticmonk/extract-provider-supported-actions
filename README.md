@@ -1,34 +1,6 @@
 # extract-provider-supported-actions
 
-## Supported Actions
 
-```json
-{
-  "aap": [
-    "aap_eda_eventstream_post"
-  ],
-  "bufo": [
-    "bufo_print"
-  ],
-  "aws": [
-    "aws_cloudfront_create_invalidation",
-    "aws_codebuild_start_build",
-    "aws_ec2_stop_instance",
-    "aws_events_put_events",
-    "aws_lambda_invoke",
-    "aws_ses_send_email",
-    "aws_sfn_start_execution",
-    "aws_sns_publish"
-  ],
-  "awscc": [],
-  "azurerm": [
-    "azurerm_virtual_machine_power"
-  ],
-  "external": [],
-  "google": [],
-  "tfe": []
-}
-```
 ## Reports
 
 <details>
