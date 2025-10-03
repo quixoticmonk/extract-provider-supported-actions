@@ -1,5 +1,7 @@
 # extract-provider-supported-actions
 
+The repo aims to capture the list of Terraform actions and supported list blocks across some of the providers. If there is a provider missing in there which has either one of those types, please open a PR with the provider definition or an issue.
+
 
 ## Reports
 

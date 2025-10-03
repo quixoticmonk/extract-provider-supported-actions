@@ -41,7 +41,7 @@ jobs:
         ## Reports
 
         <details>
-        <summary>⚡ Actions Report</summary>
+        <summary>⚡ Supported Actions</summary>
 
         ```json
         EOF
@@ -52,7 +52,7 @@ jobs:
         </details>
 
         <details>
-        <summary>📝 List Resources Report</summary>
+        <summary>📝 Supported List Resources</summary>
 
         ```json
         EOF
