@@ -1013,11 +1013,3 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 ```
 
 </details>
-
----
-
-
-## 🤝 Contributing
-
-Want to add a new provider? Simply add it to `main.tf` and open a PR!
-
