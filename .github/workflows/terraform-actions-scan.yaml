@@ -21,15 +21,13 @@ jobs:
         terraform_version: 1.14.0-beta2
         terraform_wrapper: false
     
-    - name: Make scripts executable
-      run: |
-        chmod +x get_provider_actions.sh
-        chmod +x get_provider_list_resources.sh
+    - name: Make script executable
+      run: chmod +x extract_provider_resources.sh
     
     - name: Generate Reports
       run: |
-        ./get_provider_actions.sh > actions-report.json
-        ./get_provider_list_resources.sh > list-resources-report.json
+        ./extract_provider_resources.sh actions > actions-report.json
+        ./extract_provider_resources.sh list > list-resources-report.json
     
     - name: Update README with Reports
       run: |
