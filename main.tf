@@ -9,17 +9,20 @@ terraform {
     google = {
       source = "hashicorp/google"
     }
+    google-beta = {
+      source = "hashicorp/google-beta"
+    }
     tfe = {
       source = "hashicorp/tfe"
     }
     awscc = {
       source = "hashicorp/awscc"
     }
-        bufo = {
+    bufo = {
       source = "austinvalle/bufo"
     }
     aap = {
-      source = "ansible/aap"
+      source  = "ansible/aap"
       version = "1.4.0-devpreview1"
     }
     external = {
