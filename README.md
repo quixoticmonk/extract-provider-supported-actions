@@ -54,6 +54,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "external": [],
   "google": [],
+  "google-beta": [],
   "tfe": []
 }
 ```
@@ -1008,6 +1009,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "external": [],
   "google": [],
+  "google-beta": [],
   "tfe": []
 }
 ```
