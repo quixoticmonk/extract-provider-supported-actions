@@ -46,7 +46,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_lambda_invoke",
     "aws_ses_send_email",
     "aws_sfn_start_execution",
-    "aws_sns_publish"
+    "aws_sns_publish",
+    "aws_transcribe_start_transcription_job"
   ],
   "awscc": [],
   "azurerm": [
@@ -173,6 +174,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_bedrockagentcore_browser_custom",
     "awscc_bedrockagentcore_code_interpreter_custom",
     "awscc_bedrockagentcore_gateway",
+    "awscc_bedrockagentcore_memory",
     "awscc_bedrockagentcore_runtime",
     "awscc_billing_billing_view",
     "awscc_billingconductor_billing_group",
@@ -623,6 +625,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_lightsail_container",
     "awscc_lightsail_database",
     "awscc_lightsail_disk",
+    "awscc_lightsail_disk_snapshot",
     "awscc_lightsail_distribution",
     "awscc_lightsail_domain",
     "awscc_lightsail_instance",
@@ -698,6 +701,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_neptune_db_instance",
     "awscc_neptune_db_parameter_group",
     "awscc_neptune_db_subnet_group",
+    "awscc_neptune_event_subscription",
     "awscc_neptunegraph_graph",
     "awscc_neptunegraph_private_graph_endpoint",
     "awscc_networkfirewall_firewall",
@@ -722,6 +726,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_notificationscontacts_email_contact",
     "awscc_oam_link",
     "awscc_oam_sink",
+    "awscc_observabilityadmin_organization_centralization_rule",
     "awscc_observabilityadmin_organization_telemetry_rule",
     "awscc_observabilityadmin_telemetry_rule",
     "awscc_odb_cloud_autonomous_vm_cluster",

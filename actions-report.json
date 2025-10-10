@@ -13,7 +13,8 @@
     "aws_lambda_invoke",
     "aws_ses_send_email",
     "aws_sfn_start_execution",
-    "aws_sns_publish"
+    "aws_sns_publish",
+    "aws_transcribe_start_transcription_job"
   ],
   "awscc": [],
   "azurerm": [
