@@ -7,7 +7,9 @@
     "aws_batch_job_queue",
     "aws_cloudwatch_log_group",
     "aws_iam_role",
-    "aws_instance"
+    "aws_instance",
+    "aws_subnet",
+    "aws_vpc"
   ],
   "awscc": [
     "awscc_accessanalyzer_analyzer",
@@ -215,6 +217,7 @@
     "awscc_datasync_task",
     "awscc_datazone_domain",
     "awscc_datazone_policy_grant",
+    "awscc_datazone_project_profile",
     "awscc_deadline_farm",
     "awscc_deadline_license_endpoint",
     "awscc_deadline_monitor",
@@ -840,6 +843,7 @@
     "awscc_securitylake_aws_log_source",
     "awscc_securitylake_data_lake",
     "awscc_securitylake_subscriber_notification",
+    "awscc_servicecatalog_launch_notification_constraint",
     "awscc_servicecatalog_service_action",
     "awscc_servicecatalog_tag_option",
     "awscc_servicecatalogappregistry_application",
