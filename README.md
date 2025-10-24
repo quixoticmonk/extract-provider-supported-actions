@@ -74,7 +74,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "aws": [
     "aws_batch_job_queue",
     "aws_cloudwatch_log_group",
+    "aws_iam_policy",
     "aws_iam_role",
+    "aws_iam_role_policy_attachment",
     "aws_instance",
     "aws_subnet",
     "aws_vpc"
