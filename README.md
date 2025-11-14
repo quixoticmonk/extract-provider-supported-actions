@@ -41,6 +41,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "aws": [
     "aws_cloudfront_create_invalidation",
     "aws_codebuild_start_build",
+    "aws_dynamodb_create_backup",
     "aws_ec2_stop_instance",
     "aws_events_put_events",
     "aws_lambda_invoke",
