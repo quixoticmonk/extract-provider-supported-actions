@@ -52,6 +52,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "awscc": [],
   "azurerm": [
+    "azurerm_cdn_front_door_cache_purge",
+    "azurerm_data_protection_backup_instance_protect",
+    "azurerm_managed_redis_databases_flush",
+    "azurerm_mssql_execute_job",
     "azurerm_virtual_machine_power"
   ],
   "external": [],
@@ -1029,6 +1033,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_xray_transaction_search_config"
   ],
   "azurerm": [
+    "azurerm_network_interface",
+    "azurerm_network_profile",
+    "azurerm_network_security_group",
+    "azurerm_route_table",
     "azurerm_storage_account",
     "azurerm_virtual_network"
   ],

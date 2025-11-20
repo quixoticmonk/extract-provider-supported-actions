@@ -960,6 +960,10 @@
     "awscc_xray_transaction_search_config"
   ],
   "azurerm": [
+    "azurerm_network_interface",
+    "azurerm_network_profile",
+    "azurerm_network_security_group",
+    "azurerm_route_table",
     "azurerm_storage_account",
     "azurerm_virtual_network"
   ],
