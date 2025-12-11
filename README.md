@@ -77,12 +77,16 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "bufo_bufo"
   ],
   "aws": [
+    "aws_batch_job_definition",
     "aws_batch_job_queue",
     "aws_cloudwatch_log_group",
+    "aws_codebuild_project",
     "aws_iam_policy",
     "aws_iam_role",
     "aws_iam_role_policy_attachment",
     "aws_instance",
+    "aws_lambda_capacity_provider",
+    "aws_ssm_parameter",
     "aws_subnet",
     "aws_vpc"
   ],
