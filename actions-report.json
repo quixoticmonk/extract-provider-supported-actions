@@ -1,6 +1,7 @@
 {
   "aap": [
-    "aap_eda_eventstream_post"
+    "aap_eda_eventstream_post",
+    "aap_job_launch"
   ],
   "bufo": [
     "bufo_print"
@@ -25,8 +26,10 @@
     "azurerm_mssql_execute_job",
     "azurerm_virtual_machine_power"
   ],
-  "external": [],
   "google": [],
   "google-beta": [],
+  "local": [
+    "local_command"
+  ],
   "tfe": []
 }
