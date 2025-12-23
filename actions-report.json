@@ -1,0 +1,35 @@
+{
+  "aap": [
+    "aap_eda_eventstream_post",
+    "aap_job_launch"
+  ],
+  "bufo": [
+    "bufo_print"
+  ],
+  "aws": [
+    "aws_cloudfront_create_invalidation",
+    "aws_codebuild_start_build",
+    "aws_dynamodb_create_backup",
+    "aws_ec2_stop_instance",
+    "aws_events_put_events",
+    "aws_lambda_invoke",
+    "aws_ses_send_email",
+    "aws_sfn_start_execution",
+    "aws_sns_publish",
+    "aws_transcribe_start_transcription_job"
+  ],
+  "awscc": [],
+  "azurerm": [
+    "azurerm_cdn_front_door_cache_purge",
+    "azurerm_data_protection_backup_instance_protect",
+    "azurerm_managed_redis_databases_flush",
+    "azurerm_mssql_execute_job",
+    "azurerm_virtual_machine_power"
+  ],
+  "google": [],
+  "google-beta": [],
+  "local": [
+    "local_command"
+  ],
+  "tfe": []
+}
