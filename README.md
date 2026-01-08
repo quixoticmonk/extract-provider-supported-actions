@@ -200,6 +200,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_billingconductor_pricing_plan",
     "awscc_billingconductor_pricing_rule",
     "awscc_budgets_budgets_action",
+    "awscc_cases_domain",
     "awscc_cassandra_keyspace",
     "awscc_cassandra_table",
     "awscc_cassandra_type",
