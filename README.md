@@ -88,8 +88,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_iam_role",
     "aws_iam_role_policy_attachment",
     "aws_instance",
+    "aws_kms_alias",
     "aws_kms_key",
     "aws_lambda_capacity_provider",
+    "aws_sqs_queue",
     "aws_ssm_parameter",
     "aws_subnet",
     "aws_vpc"
