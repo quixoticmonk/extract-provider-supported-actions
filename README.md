@@ -1064,6 +1064,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_network_profile",
     "azurerm_network_security_group",
     "azurerm_private_dns_zone",
+    "azurerm_resource_group",
     "azurerm_route_table",
     "azurerm_storage_account",
     "azurerm_virtual_network"
