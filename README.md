@@ -36,8 +36,13 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aap_eda_eventstream_post",
     "aap_job_launch"
   ],
+  "ansible": [],
   "bufo": [
     "bufo_print"
+  ],
+  "iosxe": [
+    "iosxe_commit",
+    "iosxe_save_config"
   ],
   "aws": [
     "aws_cloudfront_create_invalidation",
@@ -64,7 +69,36 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "local": [
     "local_command"
   ],
-  "tfe": []
+  "tfe": [],
+  "mittwald": [
+    "mittwald_container_recreate",
+    "mittwald_container_restart"
+  ],
+  "panos": [
+    "panos_commit",
+    "panos_push_to_devices"
+  ],
+  "scaleway": [
+    "scaleway_apple_silicon_reboot_server",
+    "scaleway_baremetal_server_action",
+    "scaleway_block_export_snapshot",
+    "scaleway_cockpit_trigger_test_alert",
+    "scaleway_instance_create_snapshot",
+    "scaleway_instance_export_snapshot",
+    "scaleway_instance_server_action",
+    "scaleway_job_definition_start",
+    "scaleway_key_manager_rotate_key",
+    "scaleway_mongodb_instance_snapshot",
+    "scaleway_rdb_database_export_backup",
+    "scaleway_rdb_database_restore_backup",
+    "scaleway_rdb_instance_prepare_logs",
+    "scaleway_rdb_instance_purge_logs",
+    "scaleway_rdb_instance_renew_certificate",
+    "scaleway_rdb_instance_snapshot",
+    "scaleway_rdb_read_replica_promote",
+    "scaleway_rdb_read_replica_reset",
+    "scaleway_vpc_public_gateway_refresh_ssh_keys"
+  ]
 }
 ```
 
@@ -76,9 +110,11 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 ```json
 {
   "aap": [],
+  "ansible": [],
   "bufo": [
     "bufo_bufo"
   ],
+  "iosxe": [],
   "aws": [
     "aws_appflow_connector_profile",
     "aws_appflow_flow",
@@ -1088,7 +1124,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "google": [],
   "google-beta": [],
   "local": [],
-  "tfe": []
+  "tfe": [],
+  "mittwald": [],
+  "panos": [],
+  "scaleway": []
 }
 ```
 

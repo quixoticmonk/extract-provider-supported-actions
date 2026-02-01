@@ -1,8 +1,10 @@
 {
   "aap": [],
+  "ansible": [],
   "bufo": [
     "bufo_bufo"
   ],
+  "iosxe": [],
   "aws": [
     "aws_appflow_connector_profile",
     "aws_appflow_flow",
@@ -1012,5 +1014,8 @@
   "google": [],
   "google-beta": [],
   "local": [],
-  "tfe": []
+  "tfe": [],
+  "mittwald": [],
+  "panos": [],
+  "scaleway": []
 }
