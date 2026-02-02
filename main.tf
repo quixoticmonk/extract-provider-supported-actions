@@ -6,6 +6,9 @@ terraform {
     azurerm = {
       source = "hashicorp/azurerm"
     }
+    azapi = {
+      source = "Azure/azapi"
+    }
     google = {
       source = "hashicorp/google"
     }
