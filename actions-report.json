@@ -7,6 +7,9 @@
   "bufo": [
     "bufo_print"
   ],
+  "azapi": [
+    "azapi_resource_action"
+  ],
   "iosxe": [
     "iosxe_commit",
     "iosxe_save_config"
