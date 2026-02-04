@@ -4,6 +4,9 @@
   "bufo": [
     "bufo_bufo"
   ],
+  "azapi": [
+    "azapi_resource"
+  ],
   "iosxe": [],
   "aws": [
     "aws_appflow_connector_profile",

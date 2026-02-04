@@ -40,6 +40,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "bufo": [
     "bufo_print"
   ],
+  "azapi": [
+    "azapi_resource_action"
+  ],
   "iosxe": [
     "iosxe_commit",
     "iosxe_save_config"
@@ -113,6 +116,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "ansible": [],
   "bufo": [
     "bufo_bufo"
+  ],
+  "azapi": [
+    "azapi_resource"
   ],
   "iosxe": [],
   "aws": [
