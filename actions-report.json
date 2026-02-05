@@ -67,6 +67,8 @@
     "scaleway_rdb_instance_snapshot",
     "scaleway_rdb_read_replica_promote",
     "scaleway_rdb_read_replica_reset",
+    "scaleway_s2s_vpn_connection_disable_route_propagation",
+    "scaleway_s2s_vpn_connection_enable_route_propagation",
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
   ]
 }
