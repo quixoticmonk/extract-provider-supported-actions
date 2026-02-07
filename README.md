@@ -1128,6 +1128,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_xray_transaction_search_config"
   ],
   "azurerm": [
+    "azurerm_automation_account",
     "azurerm_network_interface",
     "azurerm_network_profile",
     "azurerm_network_security_group",
