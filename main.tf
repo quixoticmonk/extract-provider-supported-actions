@@ -45,5 +45,8 @@ terraform {
     scaleway = {
       source = "scaleway/scaleway"
     }
+    foxcon = {
+      source = "fox-md/foxcon"
+    }
   }
 }

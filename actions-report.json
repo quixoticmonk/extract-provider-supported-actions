@@ -14,6 +14,9 @@
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "foxcon": [
+    "foxcon_set_subject_mode"
+  ],
   "aws": [
     "aws_cloudfront_create_invalidation",
     "aws_codebuild_start_build",
