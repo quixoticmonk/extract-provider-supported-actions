@@ -47,6 +47,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "foxcon": [
+    "foxcon_set_subject_mode"
+  ],
   "aws": [
     "aws_cloudfront_create_invalidation",
     "aws_codebuild_start_build",
@@ -123,6 +126,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azapi_resource"
   ],
   "iosxe": [],
+  "foxcon": [],
   "aws": [
     "aws_appflow_connector_profile",
     "aws_appflow_flow",

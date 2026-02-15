@@ -8,6 +8,7 @@
     "azapi_resource"
   ],
   "iosxe": [],
+  "foxcon": [],
   "aws": [
     "aws_appflow_connector_profile",
     "aws_appflow_flow",
