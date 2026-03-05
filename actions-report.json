@@ -1,0 +1,79 @@
+{
+  "aap": [
+    "aap_eda_eventstream_post",
+    "aap_job_launch"
+  ],
+  "ansible": [
+    "ansible_playbook_run"
+  ],
+  "bufo": [
+    "bufo_print"
+  ],
+  "azapi": [
+    "azapi_resource_action"
+  ],
+  "iosxe": [
+    "iosxe_commit",
+    "iosxe_save_config"
+  ],
+  "foxcon": [
+    "foxcon_set_subject_mode"
+  ],
+  "aws": [
+    "aws_cloudfront_create_invalidation",
+    "aws_codebuild_start_build",
+    "aws_dynamodb_create_backup",
+    "aws_ec2_stop_instance",
+    "aws_events_put_events",
+    "aws_lambda_invoke",
+    "aws_ses_send_email",
+    "aws_sfn_start_execution",
+    "aws_sns_publish",
+    "aws_transcribe_start_transcription_job"
+  ],
+  "awscc": [],
+  "azurerm": [
+    "azurerm_cdn_front_door_cache_purge",
+    "azurerm_data_protection_backup_instance_protect",
+    "azurerm_managed_redis_databases_flush",
+    "azurerm_mssql_execute_job",
+    "azurerm_virtual_machine_power"
+  ],
+  "google": [],
+  "google-beta": [],
+  "local": [
+    "local_command"
+  ],
+  "tfe": [],
+  "mittwald": [
+    "mittwald_container_recreate",
+    "mittwald_container_restart"
+  ],
+  "panos": [
+    "panos_commit",
+    "panos_push_to_devices"
+  ],
+  "scaleway": [
+    "scaleway_apple_silicon_reboot_server",
+    "scaleway_baremetal_server_action",
+    "scaleway_block_export_snapshot",
+    "scaleway_cockpit_trigger_test_alert",
+    "scaleway_instance_create_snapshot",
+    "scaleway_instance_export_snapshot",
+    "scaleway_instance_server_action",
+    "scaleway_job_definition_start",
+    "scaleway_key_manager_rotate_key",
+    "scaleway_mongodb_instance_snapshot",
+    "scaleway_rdb_database_export_backup",
+    "scaleway_rdb_database_restore_backup",
+    "scaleway_rdb_instance_prepare_logs",
+    "scaleway_rdb_instance_purge_logs",
+    "scaleway_rdb_instance_renew_certificate",
+    "scaleway_rdb_instance_snapshot",
+    "scaleway_rdb_read_replica_promote",
+    "scaleway_rdb_read_replica_reset",
+    "scaleway_s2s_vpn_connection_disable_route_propagation",
+    "scaleway_s2s_vpn_connection_enable_route_propagation",
+    "scaleway_vpc_public_gateway_refresh_ssh_keys"
+  ]
+}
