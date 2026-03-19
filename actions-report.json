@@ -3,7 +3,9 @@
     "aap_eda_eventstream_post",
     "aap_job_launch"
   ],
-  "ansible": [],
+  "ansible": [
+    "ansible_playbook_run"
+  ],
   "bufo": [
     "bufo_print"
   ],
