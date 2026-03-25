@@ -77,7 +77,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "local": [
     "local_command"
   ],
-  "tfe": [],
+  "tfe": [
+    "tfe_query_run"
+  ],
   "mittwald": [
     "mittwald_container_recreate",
     "mittwald_container_restart"
