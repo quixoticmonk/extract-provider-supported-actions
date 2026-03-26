@@ -22,6 +22,7 @@
   "aws": [
     "aws_cloudfront_create_invalidation",
     "aws_codebuild_start_build",
+    "aws_dms_start_replication_task_assessment_run",
     "aws_dynamodb_create_backup",
     "aws_ec2_stop_instance",
     "aws_events_put_events",
