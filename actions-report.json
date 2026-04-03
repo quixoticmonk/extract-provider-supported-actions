@@ -61,6 +61,7 @@
     "scaleway_baremetal_server_action",
     "scaleway_block_export_snapshot",
     "scaleway_cockpit_trigger_test_alert",
+    "scaleway_iam_update_saml_configuration",
     "scaleway_instance_create_snapshot",
     "scaleway_instance_export_snapshot",
     "scaleway_instance_server_action",
