@@ -1134,6 +1134,7 @@
     "azurerm_service_plan",
     "azurerm_storage_account",
     "azurerm_storage_account_customer_managed_key",
+    "azurerm_storage_sync",
     "azurerm_video_indexer_account",
     "azurerm_virtual_network",
     "azurerm_virtual_network_peering",
