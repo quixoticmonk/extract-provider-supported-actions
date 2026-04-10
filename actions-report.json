@@ -16,6 +16,9 @@
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "fivetran": [
+    "fivetran_transformation_project_run_tests"
+  ],
   "foxcon": [
     "foxcon_set_subject_mode"
   ],
@@ -45,8 +48,15 @@
   "local": [
     "local_command"
   ],
+  "tfcoremock": [],
   "tfe": [
     "tfe_query_run"
+  ],
+  "ibm": [
+    "ibm_code_engine_build_run"
+  ],
+  "juju": [
+    "juju_enable_ha"
   ],
   "mittwald": [
     "mittwald_container_recreate",

@@ -33,6 +33,9 @@ terraform {
     local = {
       source = "hashicorp/local"
     }
+    tfcoremock = {
+      source = "hashicorp/tfcoremock"
+    }
     iosxe = {
       source = "CiscoDevNet/iosxe"
     }
@@ -48,5 +51,15 @@ terraform {
     foxcon = {
       source = "fox-md/foxcon"
     }
+    fivetran = {
+      source = "fivetran/fivetran"
+    }
+    ibm = {
+      source = "IBM-Cloud/ibm"
+    }
+    juju = {
+      source = "juju/juju"
+    }
   }
+
 }
