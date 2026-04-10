@@ -1266,6 +1266,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_network_security_group",
     "azurerm_network_security_rule",
     "azurerm_private_dns_a_record",
+    "azurerm_private_dns_cname_record",
     "azurerm_private_dns_zone",
     "azurerm_private_dns_zone_virtual_network_link",
     "azurerm_private_endpoint",
