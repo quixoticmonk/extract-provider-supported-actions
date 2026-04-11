@@ -49,6 +49,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "fivetran": [
+    "fivetran_transformation_project_run_tests"
+  ],
   "foxcon": [
     "foxcon_set_subject_mode"
   ],
@@ -78,8 +81,15 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "local": [
     "local_command"
   ],
+  "tfcoremock": [],
   "tfe": [
     "tfe_query_run"
+  ],
+  "ibm": [
+    "ibm_code_engine_build_run"
+  ],
+  "juju": [
+    "juju_enable_ha"
   ],
   "mittwald": [
     "mittwald_container_recreate",
@@ -132,6 +142,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azapi_resource"
   ],
   "iosxe": [],
+  "fivetran": [],
   "foxcon": [],
   "aws": [
     "aws_appflow_connector_profile",
@@ -1293,7 +1304,19 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "google": [],
   "google-beta": [],
   "local": [],
+  "tfcoremock": [],
   "tfe": [],
+  "ibm": [],
+  "juju": [
+    "juju_application",
+    "juju_integration",
+    "juju_machine",
+    "juju_model",
+    "juju_offer",
+    "juju_secret",
+    "juju_ssh_key",
+    "juju_storage_pool"
+  ],
   "mittwald": [],
   "panos": [],
   "scaleway": []

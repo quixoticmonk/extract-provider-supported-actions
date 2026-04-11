@@ -8,6 +8,7 @@
     "azapi_resource"
   ],
   "iosxe": [],
+  "fivetran": [],
   "foxcon": [],
   "aws": [
     "aws_appflow_connector_profile",
@@ -1169,7 +1170,19 @@
   "google": [],
   "google-beta": [],
   "local": [],
+  "tfcoremock": [],
   "tfe": [],
+  "ibm": [],
+  "juju": [
+    "juju_application",
+    "juju_integration",
+    "juju_machine",
+    "juju_model",
+    "juju_offer",
+    "juju_secret",
+    "juju_ssh_key",
+    "juju_storage_pool"
+  ],
   "mittwald": [],
   "panos": [],
   "scaleway": []
