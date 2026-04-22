@@ -1315,8 +1315,12 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_workloads_sap_single_node_virtual_instance",
     "azurerm_workloads_sap_three_tier_virtual_instance"
   ],
-  "google": [],
-  "google-beta": [],
+  "google": [
+    "google_service_account"
+  ],
+  "google-beta": [
+    "google_service_account"
+  ],
   "local": [],
   "tfcoremock": [],
   "tfe": [],
