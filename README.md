@@ -34,7 +34,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 {
   "aap": [
     "aap_eda_eventstream_post",
-    "aap_job_launch"
+    "aap_job_launch",
+    "aap_workflow_job_launch"
   ],
   "ansible": [
     "ansible_playbook_run"
