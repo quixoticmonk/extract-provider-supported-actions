@@ -1322,6 +1322,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_route",
     "azurerm_route_table",
     "azurerm_service_plan",
+    "azurerm_signalr_service",
     "azurerm_storage_account",
     "azurerm_storage_account_customer_managed_key",
     "azurerm_storage_mover",
