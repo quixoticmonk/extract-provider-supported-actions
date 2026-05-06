@@ -1,7 +1,8 @@
 {
   "aap": [
     "aap_eda_eventstream_post",
-    "aap_job_launch"
+    "aap_job_launch",
+    "aap_workflow_job_launch"
   ],
   "ansible": [
     "ansible_playbook_run"
@@ -52,11 +53,21 @@
   "tfe": [
     "tfe_query_run"
   ],
+  "hcloud": [
+    "hcloud_server_poweroff",
+    "hcloud_server_poweron",
+    "hcloud_server_reboot",
+    "hcloud_server_reset"
+  ],
   "ibm": [
     "ibm_code_engine_build_run"
   ],
   "juju": [
     "juju_enable_ha"
+  ],
+  "docker": [
+    "docker_exec",
+    "docker_image_import"
   ],
   "mittwald": [
     "mittwald_container_recreate",
