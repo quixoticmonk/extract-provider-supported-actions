@@ -60,6 +60,11 @@ terraform {
     juju = {
       source = "juju/juju"
     }
+    hcloud = {
+      source = "hetznercloud/hcloud"
+    }
+    docker = {
+      source = "kreuzwerker/docker"
+    }
   }
-
 }
