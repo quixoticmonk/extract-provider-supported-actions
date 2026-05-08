@@ -86,11 +86,21 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "tfe": [
     "tfe_query_run"
   ],
+  "hcloud": [
+    "hcloud_server_poweroff",
+    "hcloud_server_poweron",
+    "hcloud_server_reboot",
+    "hcloud_server_reset"
+  ],
   "ibm": [
     "ibm_code_engine_build_run"
   ],
   "juju": [
     "juju_enable_ha"
+  ],
+  "docker": [
+    "docker_exec",
+    "docker_image_import"
   ],
   "mittwald": [
     "mittwald_container_recreate",
@@ -1362,6 +1372,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "local": [],
   "tfcoremock": [],
   "tfe": [],
+  "hcloud": [],
   "ibm": [],
   "juju": [
     "juju_application",
@@ -1373,6 +1384,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "juju_ssh_key",
     "juju_storage_pool"
   ],
+  "docker": [],
   "mittwald": [],
   "panos": [],
   "scaleway": [

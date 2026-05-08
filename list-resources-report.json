@@ -1227,6 +1227,7 @@
   "local": [],
   "tfcoremock": [],
   "tfe": [],
+  "hcloud": [],
   "ibm": [],
   "juju": [
     "juju_application",
@@ -1238,6 +1239,7 @@
     "juju_ssh_key",
     "juju_storage_pool"
   ],
+  "docker": [],
   "mittwald": [],
   "panos": [],
   "scaleway": [
