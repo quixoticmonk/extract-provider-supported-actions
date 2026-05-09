@@ -1344,6 +1344,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_route",
     "azurerm_route_table",
     "azurerm_service_plan",
+    "azurerm_servicebus_namespace",
     "azurerm_signalr_service",
     "azurerm_storage_account",
     "azurerm_storage_account_customer_managed_key",
@@ -1351,6 +1352,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_storage_mover_agent",
     "azurerm_storage_mover_source_endpoint",
     "azurerm_storage_sync",
+    "azurerm_subnet",
     "azurerm_traffic_manager_profile",
     "azurerm_video_indexer_account",
     "azurerm_virtual_network",
@@ -1359,6 +1361,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_voice_services_communications_gateway_test_line",
     "azurerm_web_application_firewall_policy",
     "azurerm_web_pubsub",
+    "azurerm_web_pubsub_socketio",
     "azurerm_workloads_sap_discovery_virtual_instance",
     "azurerm_workloads_sap_single_node_virtual_instance",
     "azurerm_workloads_sap_three_tier_virtual_instance"
