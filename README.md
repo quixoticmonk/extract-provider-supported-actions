@@ -227,6 +227,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_msk_serverless_cluster",
     "aws_msk_topic",
     "aws_nat_gateway",
+    "aws_observabilityadmin_telemetry_rule",
     "aws_opensearchserverless_collection",
     "aws_opensearchserverless_collection_group",
     "aws_organizations_aws_service_access",
@@ -259,6 +260,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_secretsmanager_secret",
     "aws_secretsmanager_secret_version",
     "aws_security_group",
+    "aws_securityhub_connector_v2",
     "aws_securityhub_insight",
     "aws_securityhub_standards_control",
     "aws_sns_topic",
@@ -1391,7 +1393,16 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "mittwald": [],
   "panos": [],
   "scaleway": [
-    "scaleway_vpc"
+    "scaleway_ipam_ip",
+    "scaleway_lb",
+    "scaleway_lb_backend",
+    "scaleway_lb_frontend",
+    "scaleway_mongodb_instance",
+    "scaleway_rdb_instance",
+    "scaleway_redis_cluster",
+    "scaleway_vpc",
+    "scaleway_vpc_private_network",
+    "scaleway_vpc_public_gateway"
   ]
 }
 ```
