@@ -1352,6 +1352,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_storage_account_customer_managed_key",
     "azurerm_storage_mover",
     "azurerm_storage_mover_agent",
+    "azurerm_storage_mover_job_definition",
+    "azurerm_storage_mover_project",
     "azurerm_storage_mover_source_endpoint",
     "azurerm_storage_sync",
     "azurerm_subnet",
