@@ -99,8 +99,12 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "juju_enable_ha"
   ],
   "docker": [
+    "docker_container_export",
     "docker_exec",
-    "docker_image_import"
+    "docker_image_import",
+    "docker_image_load",
+    "docker_image_save",
+    "docker_system_prune"
   ],
   "mittwald": [
     "mittwald_container_recreate",
