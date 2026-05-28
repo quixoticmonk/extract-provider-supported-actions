@@ -175,6 +175,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_batch_job_definition",
     "aws_batch_job_queue",
     "aws_bedrockagentcore_harness",
+    "aws_bedrockagentcore_online_evaluation_config",
+    "aws_bedrockagentcore_policy_engine",
+    "aws_bedrockagentcore_resource_policy",
     "aws_cleanrooms_collaboration",
     "aws_cleanrooms_configured_table",
     "aws_cloudfront_distribution",
@@ -258,6 +261,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_s3_bucket_versioning",
     "aws_s3_directory_bucket",
     "aws_s3_object",
+    "aws_s3control_multi_region_access_point",
+    "aws_s3control_multi_region_access_point_routes",
     "aws_s3files_access_point",
     "aws_s3files_file_system",
     "aws_s3files_file_system_policy",
@@ -402,6 +407,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_bedrockagentcore_code_interpreter_custom",
     "awscc_bedrockagentcore_evaluator",
     "awscc_bedrockagentcore_gateway",
+    "awscc_bedrockagentcore_harness",
     "awscc_bedrockagentcore_memory",
     "awscc_bedrockagentcore_o_auth_2_credential_provider",
     "awscc_bedrockagentcore_online_evaluation_config",
@@ -1382,10 +1388,14 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_workloads_sap_three_tier_virtual_instance"
   ],
   "google": [
-    "google_service_account"
+    "google_cloud_run_service",
+    "google_service_account",
+    "google_storage_bucket"
   ],
   "google-beta": [
-    "google_service_account"
+    "google_cloud_run_service",
+    "google_service_account",
+    "google_storage_bucket"
   ],
   "local": [],
   "tfcoremock": [],
