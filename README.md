@@ -131,6 +131,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_rdb_instance_prepare_logs",
     "scaleway_rdb_instance_purge_logs",
     "scaleway_rdb_instance_renew_certificate",
+    "scaleway_rdb_instance_restart",
     "scaleway_rdb_instance_snapshot",
     "scaleway_rdb_read_replica_promote",
     "scaleway_rdb_read_replica_reset",
@@ -1416,16 +1417,29 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "mittwald": [],
   "panos": [],
   "scaleway": [
+    "scaleway_domain_zone",
+    "scaleway_iam_application",
+    "scaleway_iam_group",
+    "scaleway_iam_ssh_key",
+    "scaleway_iam_user",
     "scaleway_ipam_ip",
     "scaleway_lb",
     "scaleway_lb_backend",
     "scaleway_lb_frontend",
     "scaleway_mongodb_instance",
+    "scaleway_opensearch_deployment",
+    "scaleway_rdb_database",
+    "scaleway_rdb_database_backup",
     "scaleway_rdb_instance",
+    "scaleway_rdb_snapshot",
     "scaleway_redis_cluster",
+    "scaleway_secret",
     "scaleway_vpc",
+    "scaleway_vpc_connector",
     "scaleway_vpc_private_network",
-    "scaleway_vpc_public_gateway"
+    "scaleway_vpc_public_gateway",
+    "scaleway_vpc_public_gateway_ip",
+    "scaleway_vpc_route"
   ]
 }
 ```

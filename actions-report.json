@@ -98,6 +98,7 @@
     "scaleway_rdb_instance_prepare_logs",
     "scaleway_rdb_instance_purge_logs",
     "scaleway_rdb_instance_renew_certificate",
+    "scaleway_rdb_instance_restart",
     "scaleway_rdb_instance_snapshot",
     "scaleway_rdb_read_replica_promote",
     "scaleway_rdb_read_replica_reset",
