@@ -17,6 +17,14 @@
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "nxos": [
+    "nxos_save_config"
+  ],
+  "elasticstack": [
+    "elasticstack_elasticsearch_connector_sync_job_create",
+    "elasticstack_elasticsearch_snapshot_create",
+    "elasticstack_elasticsearch_snapshot_restore"
+  ],
   "fivetran": [
     "fivetran_transformation_project_run_tests"
   ],

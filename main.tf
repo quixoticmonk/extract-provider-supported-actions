@@ -66,5 +66,11 @@ terraform {
     docker = {
       source = "kreuzwerker/docker"
     }
+    elastic = {
+      source = "elastic/elasticstack"
+    }
+    nxos = {
+      source = "CiscoDevNet/nxos"
+    }
   }
 }
