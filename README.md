@@ -50,6 +50,14 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "nxos": [
+    "nxos_save_config"
+  ],
+  "elasticstack": [
+    "elasticstack_elasticsearch_connector_sync_job_create",
+    "elasticstack_elasticsearch_snapshot_create",
+    "elasticstack_elasticsearch_snapshot_restore"
+  ],
   "fivetran": [
     "fivetran_transformation_project_run_tests"
   ],
@@ -158,6 +166,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azapi_resource"
   ],
   "iosxe": [],
+  "nxos": [],
+  "elasticstack": [],
   "fivetran": [],
   "foxcon": [],
   "aws": [
@@ -1390,12 +1400,20 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "google": [
     "google_cloud_run_service",
+    "google_compute_firewall",
+    "google_compute_global_address",
+    "google_compute_subnetwork",
     "google_service_account",
+    "google_sql_database",
     "google_storage_bucket"
   ],
   "google-beta": [
     "google_cloud_run_service",
+    "google_compute_firewall",
+    "google_compute_global_address",
+    "google_compute_subnetwork",
     "google_service_account",
+    "google_sql_database",
     "google_storage_bucket"
   ],
   "local": [],

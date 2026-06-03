@@ -8,6 +8,8 @@
     "azapi_resource"
   ],
   "iosxe": [],
+  "nxos": [],
+  "elasticstack": [],
   "fivetran": [],
   "foxcon": [],
   "aws": [
@@ -1240,12 +1242,20 @@
   ],
   "google": [
     "google_cloud_run_service",
+    "google_compute_firewall",
+    "google_compute_global_address",
+    "google_compute_subnetwork",
     "google_service_account",
+    "google_sql_database",
     "google_storage_bucket"
   ],
   "google-beta": [
     "google_cloud_run_service",
+    "google_compute_firewall",
+    "google_compute_global_address",
+    "google_compute_subnetwork",
     "google_service_account",
+    "google_sql_database",
     "google_storage_bucket"
   ],
   "local": [],
