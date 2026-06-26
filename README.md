@@ -83,6 +83,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_data_protection_backup_instance_protect",
     "azurerm_managed_redis_databases_flush",
     "azurerm_mssql_execute_job",
+    "azurerm_netapp_volume_bucket_credentials",
     "azurerm_virtual_machine_power"
   ],
   "google": [],
@@ -1385,6 +1386,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_mysql_flexible_server_configuration",
     "azurerm_mysql_flexible_server_firewall_rule",
     "azurerm_nat_gateway",
+    "azurerm_netapp_volume_bucket",
     "azurerm_network_ddos_protection_plan",
     "azurerm_network_interface",
     "azurerm_network_profile",
@@ -1404,6 +1406,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_service_plan",
     "azurerm_servicebus_namespace",
     "azurerm_signalr_service",
+    "azurerm_signalr_service_custom_certificate",
     "azurerm_signalr_service_custom_domain",
     "azurerm_storage_account",
     "azurerm_storage_account_customer_managed_key",

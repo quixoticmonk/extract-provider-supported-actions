@@ -50,6 +50,7 @@
     "azurerm_data_protection_backup_instance_protect",
     "azurerm_managed_redis_databases_flush",
     "azurerm_mssql_execute_job",
+    "azurerm_netapp_volume_bucket_credentials",
     "azurerm_virtual_machine_power"
   ],
   "google": [],
