@@ -102,7 +102,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "hcloud_server_reset"
   ],
   "ibm": [
-    "ibm_code_engine_build_run"
+    "ibm_code_engine_build_run",
+    "ibm_container_vpc_bare_metal_worker_reload"
   ],
   "juju": [
     "juju_enable_ha"
@@ -265,6 +266,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "aws_opensearchserverless_collection_group",
     "aws_organizations_aws_service_access",
     "aws_pinpointsmsvoicev2_event_destination",
+    "aws_pinpointsmsvoicev2_pool",
     "aws_route",
     "aws_route53_record",
     "aws_route53_resolver_rule",
@@ -458,6 +460,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_ce_anomaly_monitor",
     "awscc_ce_anomaly_subscription",
     "awscc_ce_cost_category",
+    "awscc_certificatemanager_acme_endpoint",
+    "awscc_certificatemanager_acme_external_account_binding",
     "awscc_chatbot_custom_action",
     "awscc_chatbot_microsoft_teams_channel_configuration",
     "awscc_chatbot_slack_channel_configuration",
@@ -532,6 +536,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_config_configuration_aggregator",
     "awscc_config_conformance_pack",
     "awscc_config_organization_conformance_pack",
+    "awscc_config_remediation_configuration",
     "awscc_config_stored_query",
     "awscc_connect_approved_origin",
     "awscc_connect_contact_flow_module_version",
@@ -1079,6 +1084,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_organizations_organization",
     "awscc_organizations_resource_policy",
     "awscc_osis_pipeline",
+    "awscc_outposts_site",
     "awscc_panorama_application_instance",
     "awscc_panorama_package",
     "awscc_paymentcryptography_alias",
@@ -1104,6 +1110,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_quicksight_data_set",
     "awscc_quicksight_data_source",
     "awscc_quicksight_folder",
+    "awscc_quicksight_o_auth_client_application",
     "awscc_quicksight_refresh_schedule",
     "awscc_quicksight_topic",
     "awscc_quicksight_vpc_connection",
@@ -1204,6 +1211,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_s3tables_table_bucket_policy",
     "awscc_s3vectors_vector_bucket",
     "awscc_s3vectors_vector_bucket_policy",
+    "awscc_sagemaker_algorithm",
     "awscc_sagemaker_app",
     "awscc_sagemaker_app_image_config",
     "awscc_sagemaker_cluster",
@@ -1211,6 +1219,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_sagemaker_domain",
     "awscc_sagemaker_endpoint",
     "awscc_sagemaker_feature_group",
+    "awscc_sagemaker_hub",
     "awscc_sagemaker_image",
     "awscc_sagemaker_inference_component",
     "awscc_sagemaker_inference_experiment",
@@ -1238,6 +1247,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_secretsmanager_secret_target_attachment",
     "awscc_securityagent_agent_space",
     "awscc_securityagent_application",
+    "awscc_securityagent_security_requirement_pack",
     "awscc_securityagent_target_domain",
     "awscc_securityhub_aggregator_v2",
     "awscc_securityhub_automation_rule_v2",

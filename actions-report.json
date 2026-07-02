@@ -69,7 +69,8 @@
     "hcloud_server_reset"
   ],
   "ibm": [
-    "ibm_code_engine_build_run"
+    "ibm_code_engine_build_run",
+    "ibm_container_vpc_bare_metal_worker_reload"
   ],
   "juju": [
     "juju_enable_ha"
