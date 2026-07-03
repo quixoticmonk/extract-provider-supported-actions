@@ -1,9 +1,7 @@
 {
   "aap": [],
   "ansible": [],
-  "bufo": [
-    "bufo_bufo"
-  ],
+  "bufo": [],
   "azapi": [
     "azapi_resource"
   ],

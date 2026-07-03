@@ -162,9 +162,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 {
   "aap": [],
   "ansible": [],
-  "bufo": [
-    "bufo_bufo"
-  ],
+  "bufo": [],
   "azapi": [
     "azapi_resource"
   ],
