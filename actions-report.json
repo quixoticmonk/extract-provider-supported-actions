@@ -106,6 +106,7 @@
     "scaleway_mongodb_instance_snapshot",
     "scaleway_rdb_database_export_backup",
     "scaleway_rdb_database_restore_backup",
+    "scaleway_rdb_instance_apply_maintenance",
     "scaleway_rdb_instance_prepare_logs",
     "scaleway_rdb_instance_purge_logs",
     "scaleway_rdb_instance_renew_certificate",

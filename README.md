@@ -139,6 +139,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_mongodb_instance_snapshot",
     "scaleway_rdb_database_export_backup",
     "scaleway_rdb_database_restore_backup",
+    "scaleway_rdb_instance_apply_maintenance",
     "scaleway_rdb_instance_prepare_logs",
     "scaleway_rdb_instance_purge_logs",
     "scaleway_rdb_instance_renew_certificate",
@@ -1550,6 +1551,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "panos": [],
   "scaleway": [
     "scaleway_account_project",
+    "scaleway_block_snapshot",
     "scaleway_domain_record",
     "scaleway_domain_zone",
     "scaleway_iam_api_key",

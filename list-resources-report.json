@@ -1389,6 +1389,7 @@
   "panos": [],
   "scaleway": [
     "scaleway_account_project",
+    "scaleway_block_snapshot",
     "scaleway_domain_record",
     "scaleway_domain_zone",
     "scaleway_iam_api_key",
