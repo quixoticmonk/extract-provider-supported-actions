@@ -72,5 +72,9 @@ terraform {
     nxos = {
       source = "CiscoDevNet/nxos"
     }
+    scm = {
+      source  = "PaloAltoNetworks/scm"
+      version = "1.0.12-beta.3"
+    }
   }
 }
