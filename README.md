@@ -124,6 +124,22 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "panos_commit",
     "panos_push_to_devices"
   ],
+  "scm": [
+    "scm_auto_vpn_push",
+    "scm_certificate_export",
+    "scm_certificate_import",
+    "scm_config_load",
+    "scm_config_push",
+    "scm_shared_snippets_load",
+    "scm_snippet_snapshot_compare",
+    "scm_snippet_snapshot_convert",
+    "scm_snippet_snapshot_diff",
+    "scm_snippet_snapshot_load",
+    "scm_snippet_snapshot_publish",
+    "scm_snippet_snapshot_save",
+    "scm_snippet_snapshot_updates",
+    "scm_trust_validation"
+  ],
   "scaleway": [
     "scaleway_apple_silicon_reboot_server",
     "scaleway_baremetal_server_action",
@@ -1607,6 +1623,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "docker": [],
   "mittwald": [],
   "panos": [],
+  "scm": [],
   "scaleway": [
     "scaleway_account_project",
     "scaleway_block_snapshot",

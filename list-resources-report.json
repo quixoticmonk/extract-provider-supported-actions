@@ -1445,6 +1445,7 @@
   "docker": [],
   "mittwald": [],
   "panos": [],
+  "scm": [],
   "scaleway": [
     "scaleway_account_project",
     "scaleway_block_snapshot",
