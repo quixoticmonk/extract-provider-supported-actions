@@ -37,6 +37,7 @@
     "aws_dms_start_replication_task_assessment_run",
     "aws_dynamodb_create_backup",
     "aws_ec2_stop_instance",
+    "aws_elasticache_apply_service_update",
     "aws_events_put_events",
     "aws_lambda_invoke",
     "aws_ses_send_email",
