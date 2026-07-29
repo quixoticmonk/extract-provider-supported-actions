@@ -52,7 +52,8 @@
     "azurerm_managed_redis_databases_flush",
     "azurerm_mssql_execute_job",
     "azurerm_netapp_volume_bucket_credentials",
-    "azurerm_virtual_machine_power"
+    "azurerm_virtual_machine_power",
+    "azurerm_web_app_set_slot_distribution"
   ],
   "google": [],
   "google-beta": [],

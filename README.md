@@ -85,7 +85,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_managed_redis_databases_flush",
     "azurerm_mssql_execute_job",
     "azurerm_netapp_volume_bucket_credentials",
-    "azurerm_virtual_machine_power"
+    "azurerm_virtual_machine_power",
+    "azurerm_web_app_set_slot_distribution"
   ],
   "google": [],
   "google-beta": [],
@@ -1493,6 +1494,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_storage_mover_job_definition",
     "azurerm_storage_mover_project",
     "azurerm_storage_mover_source_endpoint",
+    "azurerm_storage_mover_target_endpoint",
     "azurerm_storage_sync",
     "azurerm_storage_sync_server_endpoint",
     "azurerm_subnet",
@@ -1552,6 +1554,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_compute_region_target_http_proxy",
     "google_compute_region_target_tcp_proxy",
     "google_compute_region_url_map",
+    "google_compute_rollout_plan",
     "google_compute_snapshot",
     "google_compute_subnetwork",
     "google_compute_target_grpc_proxy",
@@ -1572,6 +1575,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_pubsub_topic",
     "google_secret_manager_secret",
     "google_service_account",
+    "google_service_account_key",
     "google_sql_database",
     "google_storage_bucket",
     "google_storage_hmac_key"
@@ -1638,6 +1642,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_pubsub_topic",
     "google_secret_manager_secret",
     "google_service_account",
+    "google_service_account_key",
     "google_sql_database",
     "google_storage_bucket",
     "google_storage_hmac_key"

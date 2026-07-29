@@ -1314,6 +1314,7 @@
     "azurerm_storage_mover_job_definition",
     "azurerm_storage_mover_project",
     "azurerm_storage_mover_source_endpoint",
+    "azurerm_storage_mover_target_endpoint",
     "azurerm_storage_sync",
     "azurerm_storage_sync_server_endpoint",
     "azurerm_subnet",
@@ -1373,6 +1374,7 @@
     "google_compute_region_target_http_proxy",
     "google_compute_region_target_tcp_proxy",
     "google_compute_region_url_map",
+    "google_compute_rollout_plan",
     "google_compute_snapshot",
     "google_compute_subnetwork",
     "google_compute_target_grpc_proxy",
@@ -1393,6 +1395,7 @@
     "google_pubsub_topic",
     "google_secret_manager_secret",
     "google_service_account",
+    "google_service_account_key",
     "google_sql_database",
     "google_storage_bucket",
     "google_storage_hmac_key"
@@ -1459,6 +1462,7 @@
     "google_pubsub_topic",
     "google_secret_manager_secret",
     "google_service_account",
+    "google_service_account_key",
     "google_sql_database",
     "google_storage_bucket",
     "google_storage_hmac_key"
