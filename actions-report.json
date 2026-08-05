@@ -20,6 +20,9 @@
   "nxos": [
     "nxos_save_config"
   ],
+  "terracurl": [
+    "terracurl_request"
+  ],
   "elasticstack": [
     "elasticstack_elasticsearch_connector_sync_job_create",
     "elasticstack_elasticsearch_snapshot_create",
@@ -94,6 +97,7 @@
     "panos_push_to_devices"
   ],
   "scm": [
+    "scm_application_defaults",
     "scm_auto_vpn_push",
     "scm_certificate_export",
     "scm_certificate_import",
