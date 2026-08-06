@@ -1,67 +1,25 @@
 terraform {
   required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-    azurerm = {
-      source = "hashicorp/azurerm"
-    }
-    azapi = {
-      source = "Azure/azapi"
-    }
-    google = {
-      source = "hashicorp/google"
-    }
-    google-beta = {
-      source = "hashicorp/google-beta"
-    }
-    tfe = {
-      source = "hashicorp/tfe"
-    }
-    awscc = {
-      source = "hashicorp/awscc"
-    }
-    bufo = {
-      source = "austinvalle/bufo"
-    }
     aap = {
-      source  = "ansible/aap"
+      source = "ansible/aap"
     }
     ansible = {
       source = "ansible/ansible"
     }
-    local = {
-      source = "hashicorp/local"
+    aws = {
+      source = "hashicorp/aws"
     }
-    tfcoremock = {
-      source = "hashicorp/tfcoremock"
+    awscc = {
+      source = "hashicorp/awscc"
     }
-    iosxe = {
-      source = "CiscoDevNet/iosxe"
+    azapi = {
+      source = "Azure/azapi"
     }
-    mittwald = {
-      source = "mittwald/mittwald"
+    azurerm = {
+      source = "hashicorp/azurerm"
     }
-    panos = {
-      source = "PaloAltoNetworks/panos"
-    }
-    scaleway = {
-      source = "scaleway/scaleway"
-    }
-    foxcon = {
-      source = "fox-md/foxcon"
-    }
-    fivetran = {
-      source = "fivetran/fivetran"
-    }
-    ibm = {
-      source = "IBM-Cloud/ibm"
-    }
-    juju = {
-      source = "juju/juju"
-    }
-    hcloud = {
-      source = "hetznercloud/hcloud"
+    bufo = {
+      source = "austinvalle/bufo"
     }
     docker = {
       source = "kreuzwerker/docker"
@@ -69,12 +27,58 @@ terraform {
     elastic = {
       source = "elastic/elasticstack"
     }
+    fivetran = {
+      source = "fivetran/fivetran"
+    }
+    foxcon = {
+      source = "fox-md/foxcon"
+    }
+    google = {
+      source = "hashicorp/google"
+    }
+    google-beta = {
+      source = "hashicorp/google-beta"
+    }
+    hcloud = {
+      source = "hetznercloud/hcloud"
+    }
+    ibm = {
+      source = "IBM-Cloud/ibm"
+    }
+    iosxe = {
+      source = "CiscoDevNet/iosxe"
+    }
+    juju = {
+      source = "juju/juju"
+    }
+    local = {
+      source = "hashicorp/local"
+    }
+    mittwald = {
+      source = "mittwald/mittwald"
+    }
     nxos = {
       source = "CiscoDevNet/nxos"
     }
+    panos = {
+      source = "PaloAltoNetworks/panos"
+    }
+    scaleway = {
+      source = "scaleway/scaleway"
+    }
     scm = {
       source  = "PaloAltoNetworks/scm"
-      version = "1.0.12-beta.3"
+      version = "1.0.12-beta.4"
+    }
+    terracurl = {
+      source = "devops-rob/terracurl"
+    }
+    tfe = {
+      source = "hashicorp/tfe"
+    }
+# tfcoremock isn't visible from registry.hashicorp.io but there are 2 actions
+    tfcoremock = {
+      source = "hashicorp/tfcoremock"
     }
   }
 }
