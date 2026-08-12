@@ -1547,6 +1547,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "google": [
     "google_bigquery_dataset",
     "google_bigquery_dataset_access",
+    "google_bigquery_dataset_iam_member",
+    "google_bigquery_table",
     "google_cloud_run_service",
     "google_cloud_scheduler_job",
     "google_compute_address",
@@ -1628,6 +1630,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "google-beta": [
     "google_bigquery_dataset",
     "google_bigquery_dataset_access",
+    "google_bigquery_dataset_iam_member",
+    "google_bigquery_table",
     "google_cloud_run_service",
     "google_cloud_scheduler_job",
     "google_compute_address",
