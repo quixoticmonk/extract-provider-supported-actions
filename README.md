@@ -1788,6 +1788,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_lb_backend",
     "scaleway_lb_frontend",
     "scaleway_mongodb_instance",
+    "scaleway_object_bucket",
     "scaleway_opensearch_deployment",
     "scaleway_rdb_database",
     "scaleway_rdb_database_backup",
