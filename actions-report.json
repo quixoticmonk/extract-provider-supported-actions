@@ -1,4 +1,7 @@
 {
+  "akamai": [
+    "akamai_cps_force_certificate_renewal"
+  ],
   "aap": [
     "aap_eda_eventstream_post",
     "aap_job_launch",
@@ -19,6 +22,9 @@
   ],
   "nxos": [
     "nxos_save_config"
+  ],
+  "clumio": [
+    "clumio_restore_dynamodb_table"
   ],
   "terracurl": [
     "terracurl_request"
@@ -88,6 +94,11 @@
     "docker_image_save",
     "docker_system_prune"
   ],
+  "latitudesh": [
+    "latitudesh_server_power",
+    "latitudesh_server_reinstall",
+    "latitudesh_virtual_machine_power"
+  ],
   "mittwald": [
     "mittwald_container_recreate",
     "mittwald_container_restart"
@@ -111,7 +122,9 @@
     "scm_snippet_snapshot_publish",
     "scm_snippet_snapshot_save",
     "scm_snippet_snapshot_updates",
-    "scm_trust_validation"
+    "scm_trust_validation",
+    "ztna_tenant_start_offboarding",
+    "ztna_tenant_start_onboarding"
   ],
   "scaleway": [
     "scaleway_apple_silicon_reboot_server",
@@ -139,5 +152,8 @@
     "scaleway_s2s_vpn_connection_disable_route_propagation",
     "scaleway_s2s_vpn_connection_enable_route_propagation",
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
+  ],
+  "tencentcloud": [
+    "tencentcloud_teo_confirm_origin_acl_update"
   ]
 }
