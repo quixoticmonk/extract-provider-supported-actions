@@ -1808,6 +1808,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_pubsub_subscription",
     "google_pubsub_subscription_iam_member",
     "google_pubsub_topic",
+    "google_pubsub_topic_iam_member",
     "google_secret_manager_secret",
     "google_secret_manager_secret_iam_member",
     "google_service_account",
@@ -1824,6 +1825,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_vertex_ai_featurestore",
     "google_vertex_ai_index",
     "google_vertex_ai_persistent_resource",
+    "google_vertex_ai_rag_corpus",
     "google_vertex_ai_reasoning_engine",
     "google_vertex_ai_tensorboard"
   ],
@@ -1916,6 +1918,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_discovery_engine_user_store",
     "google_dns_managed_zone",
     "google_dns_record_set",
+    "google_firebase_android_app",
+    "google_firebase_apple_app",
+    "google_firebase_web_app",
     "google_folder_iam_member",
     "google_identity_platform_inbound_saml_config",
     "google_identity_platform_oauth_idp_config",
@@ -1957,6 +1962,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_pubsub_subscription",
     "google_pubsub_subscription_iam_member",
     "google_pubsub_topic",
+    "google_pubsub_topic_iam_member",
     "google_secret_manager_secret",
     "google_secret_manager_secret_iam_member",
     "google_service_account",
@@ -1973,12 +1979,15 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_vertex_ai_featurestore",
     "google_vertex_ai_index",
     "google_vertex_ai_persistent_resource",
+    "google_vertex_ai_rag_corpus",
     "google_vertex_ai_reasoning_engine",
     "google_vertex_ai_tensorboard"
   ],
   "local": [],
   "tfcoremock": [],
-  "tfe": [],
+  "tfe": [
+    "tfe_provider_set"
+  ],
   "hcloud": [],
   "ibm": [],
   "juju": [
