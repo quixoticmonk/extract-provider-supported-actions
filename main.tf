@@ -3,6 +3,9 @@ terraform {
     aap = {
       source = "ansible/aap"
     }
+    akamai = {
+      source = "akamai/akamai"
+    }
     ansible = {
       source = "ansible/ansible"
     }
@@ -20,6 +23,9 @@ terraform {
     }
     bufo = {
       source = "austinvalle/bufo"
+    }
+    clumio = {
+      source = "clumio-code/clumio"
     }
     docker = {
       source = "kreuzwerker/docker"
@@ -51,6 +57,9 @@ terraform {
     juju = {
       source = "juju/juju"
     }
+    latitudesh = {
+      source = "latitudesh/latitudesh"
+    }
     local = {
       source = "hashicorp/local"
     }
@@ -68,7 +77,10 @@ terraform {
     }
     scm = {
       source  = "PaloAltoNetworks/scm"
-      version = "1.0.12-beta.4"
+      version = "1.0.12-beta.5"
+    }
+    tencentcloud = {
+      source = "tencentcloudstack/tencentcloud"
     }
     terracurl = {
       source = "devops-rob/terracurl"
