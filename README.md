@@ -32,6 +32,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 
 ```json
 {
+  "akamai": [
+    "akamai_cps_force_certificate_renewal"
+  ],
   "aap": [
     "aap_eda_eventstream_post",
     "aap_job_launch",
@@ -52,6 +55,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "nxos": [
     "nxos_save_config"
+  ],
+  "clumio": [
+    "clumio_restore_dynamodb_table"
   ],
   "terracurl": [
     "terracurl_request"
@@ -121,6 +127,11 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "docker_image_save",
     "docker_system_prune"
   ],
+  "latitudesh": [
+    "latitudesh_server_power",
+    "latitudesh_server_reinstall",
+    "latitudesh_virtual_machine_power"
+  ],
   "mittwald": [
     "mittwald_container_recreate",
     "mittwald_container_restart"
@@ -144,7 +155,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scm_snippet_snapshot_publish",
     "scm_snippet_snapshot_save",
     "scm_snippet_snapshot_updates",
-    "scm_trust_validation"
+    "scm_trust_validation",
+    "ztna_tenant_start_offboarding",
+    "ztna_tenant_start_onboarding"
   ],
   "scaleway": [
     "scaleway_apple_silicon_reboot_server",
@@ -172,6 +185,12 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_s2s_vpn_connection_disable_route_propagation",
     "scaleway_s2s_vpn_connection_enable_route_propagation",
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
+  ],
+  "tencentcloud": [
+    "tencentcloud_bdrc_run_copy_pair_tasks",
+    "tencentcloud_dlc_initialize_tc_lake",
+    "tencentcloud_mongodb_restore_db_instance",
+    "tencentcloud_teo_confirm_origin_acl_update"
   ]
 }
 ```
@@ -183,6 +202,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 
 ```json
 {
+  "akamai": [],
   "aap": [],
   "ansible": [],
   "bufo": [],
@@ -191,6 +211,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "iosxe": [],
   "nxos": [],
+  "clumio": [],
   "terracurl": [],
   "elasticstack": [],
   "fivetran": [],
@@ -531,8 +552,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_batch_quota_share",
     "awscc_batch_scheduling_policy",
     "awscc_batch_service_environment",
+    "awscc_bcm_scheduled_report",
     "awscc_bcmdataexports_export",
     "awscc_bcmpricingcalculator_bill_scenario",
+    "awscc_bcmpricingcalculator_workload_estimate",
     "awscc_bedrock_agent",
     "awscc_bedrock_application_inference_profile",
     "awscc_bedrock_automated_reasoning_policy",
@@ -746,6 +769,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_docdbelastic_cluster",
     "awscc_docdbelastic_cluster_snapshot",
     "awscc_drs_launch_configuration_template",
+    "awscc_drs_replication_configuration_template",
     "awscc_drs_source_network",
     "awscc_dsql_cluster",
     "awscc_dynamodb_backup",
@@ -766,8 +790,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_ec2_flow_log",
     "awscc_ec2_fpga_image",
     "awscc_ec2_host",
+    "awscc_ec2_i_pv_4_pool",
     "awscc_ec2_instance",
     "awscc_ec2_instance_connect_endpoint",
+    "awscc_ec2_instance_event_window",
     "awscc_ec2_internet_gateway",
     "awscc_ec2_ip_pool_route_table_association",
     "awscc_ec2_ipam",
@@ -1056,6 +1082,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_iotfleetwise_vehicle",
     "awscc_iotsecuretunneling_tunnel",
     "awscc_iotsitewise_access_policy",
+    "awscc_iotsitewise_application",
     "awscc_iotsitewise_asset",
     "awscc_iotsitewise_asset_model",
     "awscc_iotsitewise_dashboard",
@@ -1119,6 +1146,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_lex_resource_policy",
     "awscc_licensemanager_grant",
     "awscc_licensemanager_license",
+    "awscc_licensemanager_license_asset_group",
     "awscc_licensemanager_license_asset_rule_set",
     "awscc_lightsail_alarm",
     "awscc_lightsail_bucket",
@@ -1177,7 +1205,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_mediaconnect_router_input",
     "awscc_mediaconnect_router_network_interface",
     "awscc_mediaconnect_router_output",
+    "awscc_mediaconvert_job_template",
     "awscc_mediaconvert_preset",
+    "awscc_mediaconvert_queue",
     "awscc_medialive_cloudwatch_alarm_template",
     "awscc_medialive_cloudwatch_alarm_template_group",
     "awscc_medialive_cluster",
@@ -1201,6 +1231,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_memorydb_snapshot",
     "awscc_memorydb_subnet_group",
     "awscc_memorydb_user",
+    "awscc_mgn_connector",
     "awscc_mgn_network_migration_definition",
     "awscc_mpa_identity_source",
     "awscc_msk_channel",
@@ -1222,6 +1253,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_neptunegraph_graph",
     "awscc_neptunegraph_graph_snapshot",
     "awscc_neptunegraph_private_graph_endpoint",
+    "awscc_networkfirewall_container_association",
     "awscc_networkfirewall_firewall",
     "awscc_networkfirewall_firewall_policy",
     "awscc_networkfirewall_logging_configuration",
@@ -1286,6 +1318,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_personalize_dataset",
     "awscc_personalize_dataset_group",
     "awscc_personalize_event_tracker",
+    "awscc_personalize_filter",
     "awscc_personalize_metric_attribution",
     "awscc_personalize_schema",
     "awscc_personalize_solution",
@@ -1366,10 +1399,12 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_rolesanywhere_profile",
     "awscc_rolesanywhere_trust_anchor",
     "awscc_route53_cidr_collection",
+    "awscc_route53_delegation_set",
     "awscc_route53_dnssec",
     "awscc_route53_health_check",
     "awscc_route53_hosted_zone",
     "awscc_route53_key_signing_key",
+    "awscc_route53_query_logging_config",
     "awscc_route53_traffic_policy",
     "awscc_route53_traffic_policy_instance",
     "awscc_route53globalresolver_firewall_domain_list",
@@ -1425,6 +1460,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_sagemaker_app_image_config",
     "awscc_sagemaker_artifact",
     "awscc_sagemaker_cluster",
+    "awscc_sagemaker_cluster_scheduler_config",
+    "awscc_sagemaker_code_repository",
     "awscc_sagemaker_context",
     "awscc_sagemaker_data_quality_job_definition",
     "awscc_sagemaker_domain",
@@ -1448,6 +1485,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_sagemaker_model_quality_job_definition",
     "awscc_sagemaker_monitoring_schedule",
     "awscc_sagemaker_notebook_instance",
+    "awscc_sagemaker_notebook_instance_lifecycle_config",
     "awscc_sagemaker_partner_app",
     "awscc_sagemaker_pipeline",
     "awscc_sagemaker_processing_job",
@@ -1532,6 +1570,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_smsvoice_registration",
     "awscc_smsvoice_resource_policy",
     "awscc_smsvoice_sender_id",
+    "awscc_smsvoice_verified_destination_number",
     "awscc_sns_subscription",
     "awscc_sns_topic",
     "awscc_sqs_queue",
@@ -1594,6 +1633,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "awscc_vpclattice_service_network_service_association",
     "awscc_vpclattice_service_network_vpc_association",
     "awscc_wafv2_logging_configuration",
+    "awscc_wellarchitected_agent_profile",
     "awscc_wellarchitected_lens",
     "awscc_wellarchitected_profile",
     "awscc_wellarchitected_review_template",
@@ -2049,6 +2089,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "juju_storage_pool"
   ],
   "docker": [],
+  "latitudesh": [],
   "mittwald": [],
   "panos": [],
   "scm": [],
@@ -2085,7 +2126,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_vpc_public_gateway",
     "scaleway_vpc_public_gateway_ip",
     "scaleway_vpc_route"
-  ]
+  ],
+  "tencentcloud": []
 }
 ```
 

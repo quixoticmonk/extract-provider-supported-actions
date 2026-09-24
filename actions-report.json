@@ -154,6 +154,9 @@
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
   ],
   "tencentcloud": [
+    "tencentcloud_bdrc_run_copy_pair_tasks",
+    "tencentcloud_dlc_initialize_tc_lake",
+    "tencentcloud_mongodb_restore_db_instance",
     "tencentcloud_teo_confirm_origin_acl_update"
   ]
 }
