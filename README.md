@@ -1722,6 +1722,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_playwright_workspace",
     "azurerm_private_dns_a_record",
     "azurerm_private_dns_cname_record",
+    "azurerm_private_dns_resolver_forwarding_rule",
     "azurerm_private_dns_zone",
     "azurerm_private_dns_zone_virtual_network_link",
     "azurerm_private_endpoint",
@@ -1765,6 +1766,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_web_pubsub_custom_certificate",
     "azurerm_web_pubsub_custom_domain",
     "azurerm_web_pubsub_socketio",
+    "azurerm_windows_virtual_machine",
     "azurerm_workloads_sap_discovery_virtual_instance",
     "azurerm_workloads_sap_single_node_virtual_instance",
     "azurerm_workloads_sap_three_tier_virtual_instance"
