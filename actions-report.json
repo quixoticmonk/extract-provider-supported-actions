@@ -58,6 +58,7 @@
   "azurerm": [
     "azurerm_cdn_front_door_cache_purge",
     "azurerm_data_protection_backup_instance_protect",
+    "azurerm_data_protection_resource_guard_unlock_delete",
     "azurerm_managed_redis_databases_flush",
     "azurerm_mssql_execute_job",
     "azurerm_netapp_volume_bucket_credentials",
@@ -139,6 +140,9 @@
     "scaleway_job_definition_start",
     "scaleway_key_manager_rotate_key",
     "scaleway_mongodb_instance_snapshot",
+    "scaleway_partner_organization_lock",
+    "scaleway_partner_organization_request_admin_role",
+    "scaleway_partner_organization_unlock",
     "scaleway_rdb_database_export_backup",
     "scaleway_rdb_database_restore_backup",
     "scaleway_rdb_instance_apply_maintenance",
