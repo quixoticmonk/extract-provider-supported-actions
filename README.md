@@ -1718,6 +1718,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "azurerm": [
     "azurerm_analysis_services_server",
+    "azurerm_app_service_custom_hostname_binding",
     "azurerm_application_gateway",
     "azurerm_application_insights_standard_web_test",
     "azurerm_application_insights_workbook",
@@ -1745,6 +1746,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_dns_a_record",
     "azurerm_dns_cname_record",
     "azurerm_dns_txt_record",
+    "azurerm_eventhub",
     "azurerm_eventhub_consumer_group",
     "azurerm_federated_identity_credential",
     "azurerm_firewall",
@@ -1753,6 +1755,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_ip_group",
     "azurerm_key_vault",
     "azurerm_kubernetes_automatic_cluster",
+    "azurerm_kubernetes_cluster_node_pool",
     "azurerm_lb_probe",
     "azurerm_linux_virtual_machine",
     "azurerm_log_analytics_workspace",
