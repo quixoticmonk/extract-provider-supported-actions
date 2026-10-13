@@ -93,9 +93,9 @@ terraform {
     tfe = {
       source = "hashicorp/tfe"
     }
-# tfcoremock isn't visible from registry.hashicorp.io but there are 2 actions
     tfcoremock = {
       source = "hashicorp/tfcoremock"
+      version = "0.6.0-beta2"
     }
   }
 }
