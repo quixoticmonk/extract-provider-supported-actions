@@ -63,6 +63,9 @@ terraform {
     local = {
       source = "hashicorp/local"
     }
+    meraki = {
+      source = "CiscoDevNet/meraki"
+    }
     mittwald = {
       source = "mittwald/mittwald"
     }
@@ -77,7 +80,9 @@ terraform {
     }
     scm = {
       source  = "PaloAltoNetworks/scm"
-      version = "1.0.12-beta.5"
+    }
+    stripe = {
+      source = "stripe/stripe"
     }
     tencentcloud = {
       source = "tencentcloudstack/tencentcloud"
