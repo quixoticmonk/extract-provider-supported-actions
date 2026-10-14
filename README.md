@@ -53,6 +53,11 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "iosxe_commit",
     "iosxe_save_config"
   ],
+  "meraki": [
+    "meraki_blink_device_leds",
+    "meraki_generate_appliance_vmx_authentication_token",
+    "meraki_reboot_device"
+  ],
   "nxos": [
     "nxos_save_config"
   ],
@@ -190,6 +195,20 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_s2s_vpn_connection_enable_route_propagation",
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
   ],
+  "stripe": [
+    "stripe_fee_refund",
+    "stripe_forwarding_request",
+    "stripe_payout",
+    "stripe_refund",
+    "stripe_topup",
+    "stripe_transfer",
+    "stripe_transfer_reversal",
+    "stripe_treasury_credit_reversal",
+    "stripe_treasury_debit_reversal",
+    "stripe_treasury_inbound_transfer",
+    "stripe_treasury_outbound_payment",
+    "stripe_treasury_outbound_transfer"
+  ],
   "tencentcloud": [
     "tencentcloud_antiddos_unblock_resources",
     "tencentcloud_bdrc_run_copy_pair_tasks",
@@ -215,6 +234,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azapi_resource"
   ],
   "iosxe": [],
+  "meraki": [],
   "nxos": [],
   "clumio": [],
   "terracurl": [],
@@ -1985,6 +2005,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_vertex_ai_feature_online_store",
     "google_vertex_ai_featurestore",
     "google_vertex_ai_index",
+    "google_vertex_ai_online_evaluator",
     "google_vertex_ai_persistent_resource",
     "google_vertex_ai_rag_corpus",
     "google_vertex_ai_reasoning_engine",
@@ -2146,6 +2167,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_vertex_ai_feature_online_store",
     "google_vertex_ai_featurestore",
     "google_vertex_ai_index",
+    "google_vertex_ai_online_evaluator",
     "google_vertex_ai_persistent_resource",
     "google_vertex_ai_rag_corpus",
     "google_vertex_ai_reasoning_engine",
@@ -2210,6 +2232,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_vpc_public_gateway_ip",
     "scaleway_vpc_route"
   ],
+  "stripe": [],
   "tencentcloud": []
 }
 ```
