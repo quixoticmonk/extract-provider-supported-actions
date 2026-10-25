@@ -75,7 +75,10 @@
   "local": [
     "local_command"
   ],
-  "tfcoremock": [],
+  "tfcoremock": [
+    "tfcoremock_complex_resource",
+    "tfcoremock_simple_resource"
+  ],
   "tfe": [
     "tfe_query_run"
   ],
