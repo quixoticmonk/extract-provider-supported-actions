@@ -108,7 +108,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "local": [
     "local_command"
   ],
-  "tfcoremock": [],
+  "tfcoremock": [
+    "tfcoremock_complex_resource",
+    "tfcoremock_simple_resource"
+  ],
   "tfe": [
     "tfe_query_run"
   ],
@@ -2217,7 +2220,10 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_vertex_ai_tensorboard"
   ],
   "local": [],
-  "tfcoremock": [],
+  "tfcoremock": [
+    "tfcoremock_complex_resource",
+    "tfcoremock_simple_resource"
+  ],
   "tfe": [
     "tfe_provider_set"
   ],
