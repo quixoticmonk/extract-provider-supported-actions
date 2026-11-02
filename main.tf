@@ -6,6 +6,9 @@ terraform {
     akamai = {
       source = "akamai/akamai"
     }
+    alicloud = {
+      source = "aliyun/alicloud"
+    }
     ansible = {
       source = "ansible/ansible"
     }
@@ -95,7 +98,6 @@ terraform {
     }
     tfcoremock = {
       source = "hashicorp/tfcoremock"
-      version = "0.6.0-beta2"
     }
   }
 }
