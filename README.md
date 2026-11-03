@@ -216,9 +216,11 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "tencentcloud_antiddos_unblock_resources",
     "tencentcloud_bdrc_run_copy_pair_tasks",
     "tencentcloud_dlc_initialize_tc_lake",
+    "tencentcloud_kms_instance",
     "tencentcloud_mongodb_restore_db_instance",
     "tencentcloud_organization_provision_role_configuration",
     "tencentcloud_ssl_upload_certificate_instance",
+    "tencentcloud_ssm_service",
     "tencentcloud_teo_confirm_origin_acl_update"
   ]
 }
