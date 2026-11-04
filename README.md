@@ -35,6 +35,9 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   "akamai": [
     "akamai_cps_force_certificate_renewal"
   ],
+  "alicloud": [
+    "alicloud_ssl_certificates_service_pca_cert_sync"
+  ],
   "aap": [
     "aap_eda_eventstream_post",
     "aap_job_launch",
@@ -234,6 +237,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
 ```json
 {
   "akamai": [],
+  "alicloud": [],
   "aap": [],
   "ansible": [],
   "bufo": [],
