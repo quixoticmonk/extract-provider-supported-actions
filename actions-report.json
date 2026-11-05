@@ -1,5 +1,9 @@
 {
   "akamai": [
+    "akamai_cloudcertificates_delete_generation",
+    "akamai_cloudcertificates_renew",
+    "akamai_cloudcertificates_replace_staging",
+    "akamai_cloudcertificates_rollback",
     "akamai_cps_force_certificate_renewal"
   ],
   "alicloud": [
