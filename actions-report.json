@@ -97,7 +97,8 @@
   ],
   "ibm": [
     "ibm_code_engine_build_run",
-    "ibm_container_vpc_bare_metal_worker_reload"
+    "ibm_container_vpc_bare_metal_worker_reload",
+    "ibm_container_vpc_worker_reload"
   ],
   "juju": [
     "juju_enable_ha"
@@ -170,6 +171,7 @@
     "scaleway_rdb_read_replica_reset",
     "scaleway_s2s_vpn_connection_disable_route_propagation",
     "scaleway_s2s_vpn_connection_enable_route_propagation",
+    "scaleway_tem_update_offer_subscription",
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
   ],
   "stripe": [

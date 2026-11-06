@@ -130,7 +130,8 @@ Missing a provider? Open a PR with the provider definition or create an issue!
   ],
   "ibm": [
     "ibm_code_engine_build_run",
-    "ibm_container_vpc_bare_metal_worker_reload"
+    "ibm_container_vpc_bare_metal_worker_reload",
+    "ibm_container_vpc_worker_reload"
   ],
   "juju": [
     "juju_enable_ha"
@@ -203,6 +204,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "scaleway_rdb_read_replica_reset",
     "scaleway_s2s_vpn_connection_disable_route_propagation",
     "scaleway_s2s_vpn_connection_enable_route_propagation",
+    "scaleway_tem_update_offer_subscription",
     "scaleway_vpc_public_gateway_refresh_ssh_keys"
   ],
   "stripe": [
@@ -1834,6 +1836,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_arc_kubernetes_provisioned_cluster",
     "azurerm_attestation_provider",
     "azurerm_automation_account",
+    "azurerm_automation_runtime_environment_package",
     "azurerm_availability_set",
     "azurerm_backup_policy_vm",
     "azurerm_batch_account",
@@ -1850,6 +1853,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_cognitive_account_connection_custom_keys",
     "azurerm_cognitive_account_connection_entra_id",
     "azurerm_cognitive_deployment",
+    "azurerm_data_protection_backup_instance_cosmosdb_account",
     "azurerm_data_protection_backup_policy_cosmosdb_account",
     "azurerm_dedicated_host_group",
     "azurerm_dns_a_record",
