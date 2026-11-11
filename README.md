@@ -110,8 +110,12 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "azurerm_virtual_machine_power",
     "azurerm_web_app_set_slot_distribution"
   ],
-  "google": [],
-  "google-beta": [],
+  "google": [
+    "google_compute_instance_reset"
+  ],
+  "google-beta": [
+    "google_compute_instance_reset"
+  ],
   "local": [
     "local_command"
   ],
@@ -2098,6 +2102,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_storage_hmac_key",
     "google_vertex_ai_dataset",
     "google_vertex_ai_deployment_resource_pool",
+    "google_vertex_ai_evaluation_item",
     "google_vertex_ai_evaluation_metric",
     "google_vertex_ai_feature_group",
     "google_vertex_ai_feature_online_store",
@@ -2260,6 +2265,7 @@ Missing a provider? Open a PR with the provider definition or create an issue!
     "google_storage_hmac_key",
     "google_vertex_ai_dataset",
     "google_vertex_ai_deployment_resource_pool",
+    "google_vertex_ai_evaluation_item",
     "google_vertex_ai_evaluation_metric",
     "google_vertex_ai_feature_group",
     "google_vertex_ai_feature_online_store",

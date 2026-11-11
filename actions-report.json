@@ -77,8 +77,12 @@
     "azurerm_virtual_machine_power",
     "azurerm_web_app_set_slot_distribution"
   ],
-  "google": [],
-  "google-beta": [],
+  "google": [
+    "google_compute_instance_reset"
+  ],
+  "google-beta": [
+    "google_compute_instance_reset"
+  ],
   "local": [
     "local_command"
   ],
