@@ -1618,6 +1618,7 @@
     "azurerm_cognitive_account_connection_api_key",
     "azurerm_cognitive_account_connection_custom_keys",
     "azurerm_cognitive_account_connection_entra_id",
+    "azurerm_cognitive_account_project_connection_entra_id",
     "azurerm_cognitive_deployment",
     "azurerm_data_protection_backup_instance_cosmosdb_account",
     "azurerm_data_protection_backup_policy_cosmosdb_account",
